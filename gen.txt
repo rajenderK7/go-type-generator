@@ -1,0 +1,25 @@
+type Generated struct {
+	PhoneNumbers	[]struct {
+		Type	string	`json:"type"`
+		Number	string	`json:"number"`
+		AdditionalInfo	struct {
+			Type	string	`json:"type"`
+			Description	string	`json:"description"`
+		}	`json:"additionalInfo"`
+	}	`json:"phoneNumbers"`
+	Grades	struct {
+		Math	float64	`json:"math"`
+		English	float64	`json:"english"`
+		History	float64	`json:"history"`
+	}	`json:"grades"`
+	Languages	[]string	`json:"languages"`
+	IsMarried	bool	`json:"isMarried"`
+	Name	string	`json:"name"`
+	Age	float64	`json:"age"`
+	IsStudent	bool	`json:"isStudent"`
+	Address	struct {
+		City	string	`json:"city"`
+		ZipCode	string	`json:"zipCode"`
+		Street	string	`json:"street"`
+	}	`json:"address"`
+}
